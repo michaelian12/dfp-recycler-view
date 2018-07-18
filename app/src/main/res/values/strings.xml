@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DFP Recycler View</string>
+
+    <!-- This is an ad unit ID for a test ad. Replace with your own banner ad unit id. -->
+    <string name="ad_unit_id">/6253334/dfp_example_ad</string>
+</resources>
