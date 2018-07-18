@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
     // A banner ad is placed in every 8th position in the RecyclerView.
     val ITEMS_PER_AD = 8
     val AD_UNIT_ID = "ca-app-pub-3940256099942544/4177191030"
+    val DFP_UNIT_ID = "/6253334/dfp_example_ad"
 
     // The RecyclerView that holds and displays banner ads and menu items.
     private var recyclerView: RecyclerView? = null
@@ -122,7 +123,8 @@ class MainActivity : AppCompatActivity() {
         while (i <= recyclerViewItems.size) {
             val adView = AdView(this@MainActivity)
             adView.adSize = AdSize.BANNER
-            adView.adUnitId = AD_UNIT_ID
+//            adView.adUnitId = AD_UNIT_ID
+            adView.adUnitId = DFP_UNIT_ID
             recyclerViewItems.add(i, adView)
             i += ITEMS_PER_AD
         }
